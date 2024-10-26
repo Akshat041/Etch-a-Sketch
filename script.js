@@ -26,8 +26,17 @@ const gridMaker = function (size = 16) {
 
   items.forEach((item) => {
     item.setAttribute("style", `border: 1px solid black`);
+    const r = Math.trunc(Math.random() * 255 + 1);
+    const g = Math.trunc(Math.random() * 255 + 1);
+    const b = Math.trunc(Math.random() * 255 + 1);
+    let o = 0.1;
+
     item.addEventListener("mouseover", () => {
-      item.setAttribute("style", "background-color: black");
+      o = o + 0.1;
+      item.setAttribute(
+        "style",
+        `background-color: rgba(${r}, ${g}, ${b}, ${o})`
+      );
     });
   });
 };

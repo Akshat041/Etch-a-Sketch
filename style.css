@@ -23,7 +23,7 @@
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: black;
+  background-color: rgba(0, 0, 255, 0.493);
 }
 
 .reset {
@@ -31,5 +31,5 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: red;
+  background-color: pink;
 }
