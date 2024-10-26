@@ -3,11 +3,17 @@
   padding: 0;
 }
 
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.788);
+}
+
 .btn-container {
-  height: 100px;
+  height: 50px;
   position: relative;
-  display: flex;
-  gap: 100px;
 }
 
 .popup-btn,
@@ -20,16 +26,15 @@
 }
 
 .popup-btn {
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -30%);
   background-color: rgba(0, 0, 255, 0.493);
 }
 
 .reset {
-  margin-top: 50px;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -30%);
   background-color: pink;
 }
