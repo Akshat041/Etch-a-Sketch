@@ -54,8 +54,10 @@ const gridMaker = function (size = 16) {
   });
 };
 
+let grid_size;
+
 popup.addEventListener("click", () => {
-  const grid_size = Number(prompt("Enter new grid size"));
+  grid_size = Number(prompt("Enter new grid size"));
   if (grid_size <= 100) {
     container.innerHTML = "";
     gridMaker(grid_size);
@@ -63,11 +65,8 @@ popup.addEventListener("click", () => {
 });
 
 reset.addEventListener("click", () => {
-  const items = document.querySelectorAll(".grid-item");
-
-  items.forEach((item) => {
-    item.setAttribute("style", `background: null; border: 1px solid black`);
-  });
+  container.innerHTML = "";
+  gridMaker(grid_size);
 });
 
 gridMaker();
