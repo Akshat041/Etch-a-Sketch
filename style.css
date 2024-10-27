@@ -5,20 +5,59 @@
 
 h1 {
   text-align: center;
-  font-size: 40px;
-  margin-top: 10px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.788);
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.canvas {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.grid-container {
+  width: 800px;
+  border: 1px solid black;
+  box-sizing: content-box;
 }
 
 .btn-container {
-  height: 50px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 20px;
+}
+
+.modes {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 20px;
+}
+
+.black {
+  background: linear-gradient(60deg, rgb(75, 75, 75), black);
+}
+
+.color {
+  background: linear-gradient(
+    60deg,
+    rgb(255, 255, 186),
+    rgb(255, 193, 203),
+    rgb(128, 128, 252)
+  );
 }
 
 .popup-btn,
-.reset {
-  position: absolute;
+.reset,
+.black,
+.color {
   padding: 10px 20px;
   font-size: 20px;
   color: white;
@@ -26,15 +65,9 @@ h1 {
 }
 
 .popup-btn {
-  top: 50%;
-  left: 45%;
-  transform: translate(-50%, -30%);
   background-color: rgba(0, 0, 255, 0.493);
 }
 
 .reset {
-  top: 50%;
-  left: 55%;
-  transform: translate(-50%, -30%);
   background-color: pink;
 }
